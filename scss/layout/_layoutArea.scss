@@ -1,0 +1,50 @@
+.layoutArea {
+	display: none;
+	padding: 4rem 0;
+	@include linear-gradient($primary-color--3 0%,
+ 	                                       $primary-color--3 40%,
+ 	                                       $primary-color--4 40%,
+ 	                                       $primary-color--4 100%);
+
+	&__wrapper {
+		@include outer-container($max-width--desktop);
+	}
+
+	.headingNumber {
+		color: $primary-color--3;
+	}
+
+	&__header {
+		background-color: $grey;
+		height: 4rem;
+	}
+
+	&__heroArea {
+		background-color: darken($grey, 25%);
+		height: 25rem;
+	}
+
+	&__contentArea {
+		@include outer-container($max-width--desktop);
+		background-color: $white;
+		padding: 4rem 0;
+	}
+
+	&__mainContent {
+		height: 20rem;
+		@include span-columns(7);
+		@include shift(1);
+		background-color: $grey;
+	}
+
+	&__asideContent {
+		height: 20rem;
+		@include span-columns(3);
+		background-color: darken($grey, 10%);
+	}
+
+	&__footer {
+		height: 3rem;
+		background-color: darken($grey, 65%);
+	}
+}

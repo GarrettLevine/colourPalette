@@ -1,0 +1,97 @@
+// ==========================================================================
+// Global Config
+// ==========================================================================
+
+//==================================
+// FONT PRESETS
+//==================================
+$font-url--googleSans   : 'https://fonts.googleapis.com/css?family=Montserrat:400,700';
+$font-url--googleSerif  : 'https://fonts.googleapis.com/css?family=Titillium+Web:400,300,400italic,700';
+
+
+@import url($font-url--googleSans);
+@import url($font-url--googleSerif);
+
+//Font Weight Presets
+$font-weight--thin       		 : 100;
+$font-weight--light      		 : 300;
+$font-weight--medium     : 400;
+$font-weight--bold       	 	 : 700;
+$font-weight--ultra-bold   : 900;
+
+//Font Stacks
+$font-family--primary: 'Montserrat', sans-serif;
+$font-family--secondary: 'Titillium Web', sans-serif;
+
+//==================================
+// DESCRIPTIVE BASE COLORS
+//==================================
+
+
+//==================================
+// COLOR USAGE
+//==================================
+$white       : #FFF;
+$black       : #000;
+$grey        : #E5E6DB; 
+
+$primary-color: #50A1FE;
+$primary-color--2: #298DFF;
+$primary-color--3: #2581EA;
+$primary-color--4: #186FD3;
+$secondary-color: #FFFE3F;
+$tertiary-color: #094C99;
+
+// Text
+
+$base__font-size : 1.6rem;
+$base__line      	  : 2.4rem;
+$letter-spacing        : 0.5rem;
+
+$h1-font-size    : 5.2rem;
+$h2-font-size    : 2.2rem;
+$h3-font-size    : 2.8rem;
+$h4-font-size    : 2rem;
+$h5-font-size    : 1.6rem;
+$h6-font-size    : 1.2rem;
+
+$heading-list: (
+	h1: $h1-font-size,
+	h2: $h2-font-size,
+	h3: $h3-font-size,
+	h4: $h4-font-size,
+	h5: $h5-font-size,
+	h6: $h6-font-size
+);
+
+//zindex 
+$z-index--1: 100;
+$z-index--2: 200;
+$z-index--3: 300;
+$z-index--4: 400;
+$z-index--5: 500;
+$z-index--6: 600;
+$z-index--7: 700;
+$z-index--8: 800;
+$z-index--9: 900;
+
+// Border radius
+$br--default    : .4em;
+$br--round      : 50%;
+
+// Transitions
+$trns-duration  : .3s;
+
+// Path to Assets
+$path--rel      : "../assets";
+
+//max-width
+$max-width--tablet		: 65rem;
+$max-width--desktop	: 118rem;
+
+// Breakpoints
+$brkpoint-sm    : 1px;
+$brkpoint-md    : 650px;
+$brkpoint-lg    	 :  920px;
+$brkpoint-xlg    : 1400px;
+

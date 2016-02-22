@@ -1,0 +1,60 @@
+.mainHeader {
+	background-color: $primary-color;
+
+	&__wrapper {
+		@include outer-container($max-width--desktop);
+		display: flex;
+		align-items: center;
+		@include mq(small) {
+			flex-direction: column;
+		}
+	}
+	&__heading {
+		@include span-columns(4);
+		font-size: 7.2rem;
+		color: $white;
+		font-weight: 700;
+
+		@include mq(small) {
+			width: 100%;
+			margin-bottom: 0;
+			padding: 1rem;
+		}
+
+		.pseudoSubHeading {
+			font-size: 2.2rem;
+			text-transform: uppercase;
+			font-family: $font-family--secondary;
+			letter-spacing: 0.4rem;
+			position: relative;
+			top: -5rem;
+			left: 0.5rem;
+
+
+		}
+	}
+
+	&__text {
+		@include span-columns(7);
+		@include shift(1);
+		
+
+		color: $white;
+		font-size: 2rem;
+		font-weight: 700;
+		@include mq(small ) {
+			width: 100%;
+			margin-top: 0;
+		}
+
+		span {
+			font-family: $font-family--secondary;
+			font-weight: 400;
+			opacity: 0.83;
+		}
+	}
+}
+
+.yellowText {
+		color: $secondary-color;
+	}

@@ -1,0 +1,91 @@
+.paintingArea {
+	@include linear-gradient($primary-color 0%, 
+		                                     $primary-color 50%, 
+		                                     $primary-color--2 50%,
+		                                     $primary-color--2 100%);
+	padding-bottom: 4rem;
+	min-height: calc(100vh - 141px);
+}
+
+.headingNumber {
+	padding: 0 calc(4rem / 2);
+	position: relative;
+	
+	font-size: 4.5rem;
+	color: $primary-color;
+	z-index: $z-index--2;
+
+	top: 1rem;
+	
+	font-family: $font-family--secondary;
+}
+
+.paintingArea {
+
+	&__heading {
+		margin-top: 0;
+		font-weight: 700;
+		color: $white;
+	}
+	&__paintingWrapper {
+		@include outer-container($max-width--desktop);
+	}
+}
+
+.paintingWrapper {
+	&__paintingContainer {
+		display: flex;
+		align-items: center;
+		margin-top: 2rem;
+		@include mq(small) {
+			flex-direction: column;
+			padding: 1rem;
+		}
+	}
+	&__headingContainer {
+		position: relative;
+		&::after {
+		content: " ";
+		display:block;
+		@include size(4rem);
+
+		border-radius: 50%;
+		background-color: $secondary-color;
+
+		position: absolute;
+		top: 2rem;
+		left: 1rem;
+		z-index: $z-index--1;
+	}
+	}
+}
+
+.imageButton {
+	@include span-columns(4);
+	// padding: 1.5rem;
+	// background-color: $grey;
+	padding: 0;
+
+	display: flex;
+	align-items: center;
+	border: none;
+	box-shadow: 0 0 4px rgba(0,0,0,0.5);
+	transition: all 0.5s;
+
+	@include mq(small) {
+		width: 100%;
+		margin-bottom: 1rem;
+	}
+
+	&:hover {
+		box-shadow: 0 0 8px rgba(0,0,0,0.7);
+	}
+
+	&:focus {
+		box-shadow: 0 0 12px rgba(0,0,0,0.9);
+		outline: none;	
+	}
+	&__imageItem {
+		width: 100%;
+	}
+}

@@ -18,6 +18,7 @@ artApp.newPaintingArray = [];
 artApp.paintingsArray = [];
 artApp.paletteChoice = [];
 
+
 // GET PAINTING
 artApp.getPainting = function() {
 	 $.ajax( {
@@ -47,7 +48,7 @@ artApp.filterPaintings = function(object) {
 		}
 }
 
-artApp.chooseThreePaintings= function(maxNumber, array) {
+artApp.chooseThreePaintings = function(maxNumber, array) {
 	n1 = Math.floor(Math.random() * maxNumber);
 	n2 = Math.floor(Math.random() * maxNumber);
 	n3 = Math.floor(Math.random() * maxNumber);

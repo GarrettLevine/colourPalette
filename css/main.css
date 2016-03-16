@@ -514,7 +514,8 @@ h6 {
 .paintingArea__heading {
   margin-top: 0;
   font-weight: 700;
-  color: #FFF; }
+  color: #FFF;
+  display: inline-block; }
 .paintingArea__paintingWrapper {
   max-width: 118rem;
   margin-left: auto;
@@ -533,7 +534,10 @@ h6 {
       flex-direction: column;
       padding: 1rem; } }
 .paintingWrapper__headingContainer {
-  position: relative; }
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
   .paintingWrapper__headingContainer::after {
     content: " ";
     display: block;
@@ -545,6 +549,16 @@ h6 {
     top: 2rem;
     left: 1rem;
     z-index: 100; }
+.paintingWrapper__refresh {
+  border: 1px solid #FFF;
+  border-radius: 1rem;
+  color: #FFF;
+  font-size: 3rem;
+  background-color: transparent;
+  letter-spacing: 0.1rem; }
+  .paintingWrapper__refresh:hover {
+    color: #50A1FE;
+    background-color: #FFF; }
 
 .imageButton {
   float: left;
@@ -636,8 +650,6 @@ h6 {
     @media (min-width: 1px) and (max-width: 650px) {
       .paletteArea__paletteText {
         font-size: 1rem; } }
-  .paletteArea__paletteContainer {
-    height: 3.5rem; }
   .paletteArea__paletteChoiceContainer {
     padding: 2rem 2rem;
     border-radius: 1rem;
@@ -670,9 +682,9 @@ h6 {
       color: #FFFE3F;
       opacity: 0.9; }
 .paletteChoiceContainer__layoutButton {
-  height: 4rem;
-  width: 12rem;
-  font-size: 2rem;
+  height: 8rem;
+  width: 16rem;
+  font-size: 4rem;
   color: #FFF;
   border: 1px solid #FFF;
   border-radius: 1rem;
@@ -744,5 +756,18 @@ h6 {
   .layoutArea__footer {
     height: 3rem;
     background-color: #434530; }
+
+.copyButton {
+  background: transparent;
+  border: 1px solid #FFF;
+  border-radius: 0.2rem;
+  transition: all 0.5s; }
+  .copyButton i {
+    font-size: 3rem;
+    color: #FFF; }
+  .copyButton:hover {
+    background: #FFF; }
+    .copyButton:hover i {
+      color: #2581EA; }
 
 /*# sourceMappingURL=main.css.map */

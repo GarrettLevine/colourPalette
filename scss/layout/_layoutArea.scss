@@ -48,3 +48,21 @@
 		background-color: darken($grey, 65%);
 	}
 }
+
+.copyButton {
+	background: transparent;
+	border: 1px solid $white;
+	border-radius: 0.2rem;
+	transition: all 0.5s;
+	i {
+		font-size: 3rem;
+		color: $white;
+	}
+	
+	&:hover {
+		background: $white;
+		& i {
+			color: $primary-color--3;
+		}
+	}
+}

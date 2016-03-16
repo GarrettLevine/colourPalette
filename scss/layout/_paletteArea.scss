@@ -76,7 +76,6 @@
 	}
 
 	&__paletteContainer {
-		height: 3.5rem;
 	}
 
 	&__paletteChoiceContainer {
@@ -123,8 +122,8 @@
 		}
 	}
 	&__layoutButton {
-		@include size(12rem 4rem);
-		font-size: 2rem;
+		@include size(16rem 8rem);
+		font-size: 4rem;
 		color: $white;
 
 		border: 1px solid $white;

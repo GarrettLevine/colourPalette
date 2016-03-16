@@ -64,6 +64,14 @@ artApp.chooseThreePaintings = function(maxNumber, array) {
 	console.log(artApp.newPaintingArray);
 }
 
+artApp.refreshButton = function() {
+	$('.paintingWrapper__refresh').on('click', function() {
+			$('.paintingWrapper__paintingContainer').empty();
+			artApp.newPaintingArray = [];
+			artApp.getPainting();
+	});
+}
+
 
 
 artApp.storePaintings = function(paintings) {
@@ -171,6 +179,7 @@ artApp.layoutColours = function() {
 //ART APP INITIALIZE
 artApp.init =  function() {
 	artApp.getPainting();
+	artApp.refreshButton();
 	artApp.createPalette();
 	artApp.pickColour();
 	artApp.resetColours();
